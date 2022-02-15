@@ -115,13 +115,13 @@ jobs:
     outputs:
       generatedCarsPretrained:
         type: dataset
-        with:
+        with: 
           ref: stylegan2-wsp-cars-generated
     uses: script@v1
     with:
       script: |-
         pip install scipy==1.3.3
-        pip install requests==2.22.0
+        pip install requests==2.22.0 
         pip install Pillow==6.2.1
         cp -R /inputs/repo /stylegan2
         cd /stylegan2
